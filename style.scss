@@ -37,17 +37,20 @@ $spacer:100px;
         }
     }
 }
-@mixin projectSection {
+@mixin projectSection{
     display: block;
     width: 60%;
-    margin: $spacer auto;
+    margin: auto;
     .h3 {
         font-size: $h3font;
         margin-bottom: 60px;
     }
 }
-.section-project {
+.section-bg {
     @include projectSection;
+}
+.section-project:nth-child(odd) {
+    background-color: gray;
 }
 
 .banner-lead {

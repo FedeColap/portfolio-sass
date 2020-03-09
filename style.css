@@ -1,11 +1,15 @@
-.section-project {
+.section-bg {
   display: block;
   width: 60%;
-  margin: 100px auto;
+  margin: auto;
 }
-.section-project .h3 {
+.section-bg .h3 {
   font-size: 30px;
   margin-bottom: 60px;
+}
+
+.section-project:nth-child(odd) {
+  background-color: gray;
 }
 
 .banner-lead {

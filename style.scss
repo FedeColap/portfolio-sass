@@ -4,48 +4,65 @@ $babyblue: #D6EFFF;
 $babypink: #fde4f2;
 $brilliantgreen: #30cb00;
 $h2style: linear-gradient(to bottom right, #11998e,#38ef7d);
+$h2font: 40px;
+$h3font: 30px;
 $iconwidth: 200px;
 $myphoto:300px;
+$pictureSlideshow: 500px;
+$spacer:100px;
 
 @mixin banner {
     width: 100%;
     position: relative;
-    // .banner-content {
-    //     position: absolute;
-    //     top: 400px;
-    //     margin: auto;
-    // }
     .banner-image {
         width: 100%;
         height: 600px;
         text-align: center;
     }
-    .button {
+    .banner-button {
         position: absolute;
         width: 100px;
-        top: 400px;
-        left: 48%;
+        top: 200px;
+        left: 49%;
         background-color: $babypink;
         display: inline-block;
         color: $deepblue;
         font-weight: bold;
         padding: 15px;
         border-radius: 10px;
+        border: transparent;
+        &:hover {
+            background-color: $deepblue;
+            color: $babypink;
+        }
     }
+}
+@mixin projectSection {
+    display: block;
+    width: 60%;
+    margin: $spacer auto;
+    .h3 {
+        font-size: $h3font;
+        margin-bottom: 60px;
+    }
+}
+.section-project {
+    @include projectSection;
 }
 
 .banner-lead {
     @include banner;
-}
-
-h1 {
-    background-color: $babypink;
 }
 .nav {
     background: $deepblue;
     ul {
         width: 100%;
         margin:0;
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
     }
     .li-nav {
         float: right;
@@ -53,20 +70,29 @@ h1 {
         list-style: none;
         color: $offwhite;
         display: block;
+        // height: 40px;
         text-align: center;
         padding:16px;
+        &:hover {
+            background-color: $babypink;
+        }
     }
-}
-.nav ul:after {
-    content: "";
-    display: block;
-    clear: both;
+    .link-nav {
+        display: block;
+        width: 100%;
+        color: $offwhite;
+        text-decoration: none;
+        &:hover {
+            color:$deepblue;
+        }
+    }
 }
 .wrapper-contacts {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: $spacer;
     .ul-icon {
-        margin: 0;
+        width: 60%;
+        margin: auto;
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -81,7 +107,16 @@ h1 {
     }
     .icon {
         width: $iconwidth;
+        padding: 70px;
+        border: 2px solid $babypink;
         border-radius:50%;
+    }
+    .link-icon {
+        color: $deepblue;
+        text-decoration: none;
+        &:hover {
+            color: complement($deepblue);
+        }
     }
     
 }
@@ -89,6 +124,15 @@ h1 {
     img {
         width:$myphoto;
     }
+    .wrapper-life-intro {
+        background-color: orange;
+        display: flex;
+        margin-bottom: $spacer;
+        .life-intro-description {
+            background-color: yellow;
+        }
+    }
+    
 }
 .banner-second {
     display: flex;
@@ -98,6 +142,28 @@ h1 {
     height: 300px;
     .h2 {
         align-self: center;
-        font-size: 30px;
+        font-size: $h2font;
+    }
+}
+// .section-project-bring-it, .section-project-unleash, .section-project-fairies, .section-project-nerd {
+//     .pictureProj1 {
+//         max-width: $pictureSlideshow;
+//     }
+// }
+footer {
+    background-color: $deepblue;
+    display: flex;
+    justify-content: space-between;
+    color: $babypink;
+    p{
+        margin-left: 80px;
+    }
+    .up {
+        display: block;
+        margin-right:80px;
+        &:hover {
+            background-color: $babypink;
+            color: $deepblue;
+        }
     }
 }

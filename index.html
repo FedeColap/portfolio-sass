@@ -7,27 +7,28 @@
         <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="base.css">
+        <link rel="stylesheet" type="text/css" href="slideshow.css">
     </head>
     <body>
         <header>
             <nav class="nav">
                 <div class="wrapper wrapper-nav">
                     <ul class="ul">
-                        <li class="li-nav">Projects</li>
-                        <li class="li-nav">Contacts</li>
+                        <li class="li-nav"><a href="#" class="link-nav">Projects</a></li>
+                        <li class="li-nav"><a href="#" class="link-nav">Contacts</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="banner banner-lead">
-                <img class="banner-image" src="./imgs/nuvole.jpg" />
+            <div class="banner-lead">
+                <img class="banner-image" src="./imgs/girasoli.png" />
                 <!-- <div class="banner-content"> -->
-                    <button class="button banner-content">contact me</button>
+                    <button class="banner-button">contact me</button>
                 <!-- </div> -->
             </div>
         </header>
         <section class="section life-intro">
-            <div class="wrapper wrapper-life-intro">
-                <h1 class="h1">Hi, I am Federica</h1>
+            <h1 class="h1">Hi, I am Federica</h1>
+            <div class="wrapper-life-intro">
                 <img src="./imgs/memedesima.jpg" />
                 <article class="life-intro-description">
                     <p><strong> I am a Front-end Developer </strong> and future graduate of the Engineering Flex course at Thinkful. </p>
@@ -43,37 +44,193 @@
             <div class="wrapper wrapper-contacts">
                 <ul class="ul-icon">
                     <li class="li-icon">
-                        <img class="icon" src="./imgs/github-black.png" />
-                        <p>Visit my Github Profile</p>
+                        <a href="#"><img class="icon" src="./imgs/github-black.png" /></a>
+                        <a href="#" class="link-icon">Visit my Github Profile</a>
                     </li>
                     <li class="li-icon">
-                        <img class="icon" src="./imgs/linkedin-black.png" />
-                        <p>Find me on LinkedIn</p>
+                        <a href="#"><img class="icon" src="./imgs/linkedin-black.png" /></a>
+                        <a href="#" class="link-icon">Find me on LinkedIn</a>
                     </li>
                     <li class="li-icon">
-                        <img class="icon" src="./imgs/gmail-black.png" />
-                        <p>Send me an email</p>
+                        <a href="#"><img class="icon" src="./imgs/gmail-black.png" /></a>
+                        <a href="#" class="link-icon">Send me an email</a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="section projects">
+        <section class="section-projects">
             <div class="banner-second">
                 <h2 class="h2">My projects</h2>
             </div>
-            <section class="section-project-bring-it">
+            <section class="section-project section-project-bring-it">
                 <h3 class="h3">Bring it (please)</h3>
+                <div class="project-console">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides1 fade">
+                            <img src="imgs/projectPics/p3intro.png" alt="landing page from Bring It app" class="pictureProj1" >
+                        </div>
+                        <div class="mySlides1 fade">
+                            <img src="imgs/projectPics/p3list.png" alt="results page from Bring It app" class="pictureProj1">
+                        </div>
+                        <div class="mySlides1 fade">
+                            <img src="imgs/projectPics/p3mission.png" alt="intro message from Bring It app" class="pictureProj1">
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot1" onclick="currentSlide1(1)"></span>
+                            <span class="dot1" onclick="currentSlide1(2)"></span>
+                            <span class="dot1" onclick="currentSlide1(3)"></span>
+                        </div>
+                    </div>
+                    <!-- <div class="mobilePics">
+                        <img src="projectPics/p3intro.png" alt="landing page from Bring It app" class="pictureProj1"/>
+                        <img src="projectPics/p3list.png" alt="results page from Bring It app" class="pictureProj1"/>
+                    </div> -->
+                    <div class="butspace">
+                        <p class="fakeButton"><a class="link-project" href="https://github.com/FedeColap/bring-it-client" target="_blank" rel="noreferrer">Client Repo</a>  </p>
+                        <p class="fakeButton"><a class="link-project" href="https://github.com/FedeColap/bring-it-server" target="_blank" rel="noreferrer">Server Repo</a></p>   
+                        <p class="fakeButton"><a class="link-project" href="https://fedecolap-bring-it-app.now.sh/" target="_blank" rel="noreferrer">Live Page</a></p>
+                    </div>
+                </div>
+                <p class="projDescription"> A social media platform to connect people on exchanging foreign goods. <br>
+                    The website features a system of authentication based on JWT and the countries are validated by and external API call.<br>
+                    Created using React, Node.js and PostgreSQL</p>
             </section>
-            <section class="section-project-unleash">
+            <section class="section-project section-project-unleash">
                 <h3 class="h3">Unleash</h3>
+                <div class="project-console">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides2 fade">
+                                <img src="imgs/projectPics/p4login.png" alt="login page from Unleash login" class="pictureProj1" >
+                            </div>
+                            <div class="mySlides2 fade">
+                                <img src="imgs/projectPics/p4landing.png" alt="landing page from Unleash" class="pictureProj1">
+                            </div>
+                            <div class="mySlides2 fade">
+                                <img src="imgs/projectPics/p4welcome.png" alt="welcome page from Unleash" class="pictureProj1">
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot2" onclick="currentSlide2(1)"></span>
+                            <span class="dot2" onclick="currentSlide2(2)"></span>
+                            <span class="dot2" onclick="currentSlide2(3)"></span>
+                        </div>
+                    </div>
+                    <!-- <div class="mobilePics">
+                        <img src="projectPics/p4login.png" alt="login page from Unleash login" class="pictureProj1"/>
+                        <img src="projectPics/p4landing.png" alt="landing page from Unleash" class="pictureProj1"/>
+                    </div> -->
+                    <div class="butspace">
+                        <p class="fakeButton"><a class="link-project" href="https://github.com/FedeColap/Unleash-react" target="_blank" rel="noreferrer">Client Repo</a></p>   
+                        <p class="fakeButton"><a class="link-project" href="https://github.com/FedeColap/unleash-server" target="_blank" rel="noreferrer">Server Repo</a></p>   
+                        <p class="fakeButton"><a class="link-project" href="https://unleash-react.now.sh/" target="_blank" rel="noreferrer">Live Page</a></p>
+                    </div>
+                </div>
+                <p class="projDescription"> Not-the-usual-blog, created using React, Node.js and PostgreSQL. <br>
+                    Upon authentication, the user can retrieve, add, update and delete personal notes,
+                    get a daily joke (via external API call) and use a "releasing feature" that does not store any data.<br>
+                    Inspired by <a href="https://foaas.com/" target="_blank" rel="noreferrer">foaas</a> (yes, it exists!)</p>
+        
             </section>
-            <section class="section-project-fairies">
+            <section class="section-project section-project-fairies">
                 <h3 class="h3">Grimm Brothers' fairy tales</h3>
+                <div class="project-console">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                            <div class="mySlides3 fade">
+                                <img src="imgs/projectPics/p2Intro.png" alt="landing page from my fairy tales' app"  class="pictureProj1">
+                            </div>
+                            <div class="mySlides3 fade">
+                                <img src="imgs/projectPics/p2List.png" alt="list of available fairytales (screenshot)" class="pictureProj1">
+                            </div>
+                            <div class="mySlides3 fade">
+                                <img src="imgs/projectPics/p2info.png" alt="info about Pinocchio" class="pictureProj1">
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                            <br>
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot3" onclick="currentSlide3(1)"></span>
+                                <span class="dot3" onclick="currentSlide3(2)"></span>
+                                <span class="dot3" onclick="currentSlide3(3)"></span>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="mobilePics">
+                            <img src="projectPics/p2Intro.png" alt="landing page from my fairy tales' app" class="pictureProj1"/>
+                            <img src="projectPics/p2List.png" alt="list of available fairytales (screenshot)" class="pictureProj1"/>
+                        </div> -->
+                        <div class="butspace">
+                                <p class="fakeButton"><a class="link-project" href="https://github.com/FedeColap/listen-a-fairytale" target="_blank" rel="noreferrer">Repo</a></p>  
+                                <p class="fakeButton"><a class="link-project" href="https://fedecolap.github.io/fairyAPPbackbone/" target="_blank" rel="noreferrer">Live Page</a></p>
+                        </div>
+                    </div>
+                    <p class="projDescription">This app has been created using HTML, CSS and JS/JQuery, and RESTful APIs to retrieve information, 
+                            audio and text of fairytales and propose them to the user.</p>
+               
             </section>
-            <section class="section-project-nerd">
+            <section class="section-project section-project-nerd">
                 <h3 class="h3">How Nerd are you?</h3>
+                <div class="project-console">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides4 fade">
+                            <img src="imgs/projectPics/question-quiz.png" alt="a random question from my quiz app" class="pictureProj1" >
+                        </div>
+                        <div class="mySlides4 fade">
+                            <img src="imgs/projectPics/wrong-quiz.png" alt="wrong answer from my quiz app" class="pictureProj1">
+                        </div>
+                        <div class="mySlides4 fade">
+                            <img src="imgs/projectPics/ending-quiz.png" alt="ending page from my quiz app" class="pictureProj1">
+                            </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot4" onclick="currentSlide4(1)"></span>
+                            <span class="dot4" onclick="currentSlide4(2)"></span>
+                            <span class="dot4" onclick="currentSlide4(3)"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="mobilePics">
+                        <img src="projectPics/question-quiz.png" alt="a random question from my quiz app" class="pictureProj1"/>
+                        <img src="projectPics/wrong-quiz.png" alt="wrong answer from my quiz app" class="pictureProj1"/>
+                    </div> -->
+                    <div class="butspace">
+                        <p class="fakeButton"><a class="link-project" href="https://github.com/FedeColap/ultimate-quiz" target="_blank" rel="noreferrer">Repo</a></p>  
+                        <p class="fakeButton"><a class="link-project" href="https://fedecolap.github.io/ultimate-quiz/" target="_blank" rel="noreferrer">Live Page</a></p>
+                    </div>
+                </div>
+                    <p class="projDescription"> This app has been created using HTML, CSS and JS/JQuery.<br>
+                        Is there anything more colorful than Animes? Regardless of your preparation on this topic, please enjoy this trip... childish style! </p>
             </section>
 
         </section>
+        <footer>
+            <p>2020 | Federica Colapaoli</p>
+            <p class="up">Go back to top</p>
+        </footer>
+        <script src="slideshow.js"></script>
     </body>
 </html>

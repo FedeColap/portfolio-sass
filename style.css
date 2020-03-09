@@ -1,3 +1,13 @@
+.section-project {
+  display: block;
+  width: 60%;
+  margin: 100px auto;
+}
+.section-project .h3 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
 .banner-lead {
   width: 100%;
   position: relative;
@@ -7,21 +17,22 @@
   height: 600px;
   text-align: center;
 }
-.banner-lead .button {
+.banner-lead .banner-button {
   position: absolute;
   width: 100px;
-  top: 400px;
-  left: 48%;
+  top: 200px;
+  left: 49%;
   background-color: #fde4f2;
   display: inline-block;
   color: #032f3e;
   font-weight: bold;
   padding: 15px;
   border-radius: 10px;
+  border: transparent;
 }
-
-h1 {
-  background-color: #fde4f2;
+.banner-lead .banner-button:hover {
+  background-color: #032f3e;
+  color: #fde4f2;
 }
 
 .nav {
@@ -30,6 +41,11 @@ h1 {
 .nav ul {
   width: 100%;
   margin: 0;
+}
+.nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .nav .li-nav {
   float: right;
@@ -40,19 +56,26 @@ h1 {
   text-align: center;
   padding: 16px;
 }
-
-.nav ul:after {
-  content: "";
+.nav .li-nav:hover {
+  background-color: #fde4f2;
+}
+.nav .link-nav {
   display: block;
-  clear: both;
+  width: 100%;
+  color: #FEFEFF;
+  text-decoration: none;
+}
+.nav .link-nav:hover {
+  color: #032f3e;
 }
 
 .wrapper-contacts {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .wrapper-contacts .ul-icon {
-  margin: 0;
+  width: 60%;
+  margin: auto;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -67,11 +90,28 @@ h1 {
 }
 .wrapper-contacts .icon {
   width: 200px;
+  padding: 70px;
+  border: 2px solid #fde4f2;
   border-radius: 50%;
+}
+.wrapper-contacts .link-icon {
+  color: #032f3e;
+  text-decoration: none;
+}
+.wrapper-contacts .link-icon:hover {
+  color: #3e1203;
 }
 
 .life-intro img {
   width: 300px;
+}
+.life-intro .wrapper-life-intro {
+  background-color: orange;
+  display: flex;
+  margin-bottom: 100px;
+}
+.life-intro .wrapper-life-intro .life-intro-description {
+  background-color: yellow;
 }
 
 .banner-second {
@@ -83,7 +123,25 @@ h1 {
 }
 .banner-second .h2 {
   align-self: center;
-  font-size: 30px;
+  font-size: 40px;
+}
+
+footer {
+  background-color: #032f3e;
+  display: flex;
+  justify-content: space-between;
+  color: #fde4f2;
+}
+footer p {
+  margin-left: 80px;
+}
+footer .up {
+  display: block;
+  margin-right: 80px;
+}
+footer .up:hover {
+  background-color: #fde4f2;
+  color: #032f3e;
 }
 
 /*# sourceMappingURL=style.css.map */

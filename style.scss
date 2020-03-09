@@ -1,0 +1,103 @@
+$deepblue: #032f3e;
+$offwhite: #FEFEFF;
+$babyblue: #D6EFFF;
+$babypink: #fde4f2;
+$brilliantgreen: #30cb00;
+$h2style: linear-gradient(to bottom right, #11998e,#38ef7d);
+$iconwidth: 200px;
+$myphoto:300px;
+
+@mixin banner {
+    width: 100%;
+    position: relative;
+    // .banner-content {
+    //     position: absolute;
+    //     top: 400px;
+    //     margin: auto;
+    // }
+    .banner-image {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+    }
+    .button {
+        position: absolute;
+        width: 100px;
+        top: 400px;
+        left: 48%;
+        background-color: $babypink;
+        display: inline-block;
+        color: $deepblue;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
+
+.banner-lead {
+    @include banner;
+}
+
+h1 {
+    background-color: $babypink;
+}
+.nav {
+    background: $deepblue;
+    ul {
+        width: 100%;
+        margin:0;
+    }
+    .li-nav {
+        float: right;
+        width: 14%;
+        list-style: none;
+        color: $offwhite;
+        display: block;
+        text-align: center;
+        padding:16px;
+    }
+}
+.nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper-contacts {
+    width: 100%;
+    margin-bottom: 60px;
+    .ul-icon {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .li-icon {
+        width:200px;
+        margin: 0;
+        box-sizing: border-box;
+        text-align:center;
+        list-style: none;  
+    }
+    .icon {
+        width: $iconwidth;
+        border-radius:50%;
+    }
+    
+}
+.life-intro {
+    img {
+        width:$myphoto;
+    }
+}
+.banner-second {
+    display: flex;
+    justify-content: center;
+    background-image: $h2style;
+    color: black;
+    height: 300px;
+    .h2 {
+        align-self: center;
+        font-size: 30px;
+    }
+}

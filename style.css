@@ -1,3 +1,9 @@
+.nav-protector {
+  display: block;
+  width: 100%;
+  height: 57px;
+}
+
 .banner-lead {
   width: 100%;
   max-height: 500px;
@@ -17,13 +23,14 @@
   font-size: 50px;
 }
 .banner-lead .banner-container .banner-content {
-  color: white;
+  color: #FEFEFF;
   margin-right: 50px;
   max-width: 900px;
 }
 .banner-lead .banner-container .banner-content p {
   display: block;
-  line-height: 26px;
+  font-size: 25px;
+  line-height: 40px;
 }
 
 .banner-second {
@@ -54,6 +61,7 @@ footer .up {
   display: block;
   margin-right: 80px;
   color: #fde4f2;
+  cursor: pointer;
 }
 footer .up:hover {
   background-color: #fde4f2;
@@ -62,15 +70,13 @@ footer .up:hover {
 
 .nav {
   background: #fbc02d;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 .nav ul {
   width: 100%;
   margin: 0;
-}
-.nav ul:after {
-  content: "";
-  display: block;
-  clear: both;
 }
 .nav .li-nav {
   float: right;
@@ -113,6 +119,7 @@ footer .up:hover {
 }
 .section-project:nth-child(even) .fakeButton {
   border: 2px solid #D6EFFF;
+  background-color: #FEFEFF;
 }
 
 .skills-bar {

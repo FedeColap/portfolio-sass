@@ -11,6 +11,7 @@
     </head>
     <body>
         <header>
+            <div id="anchorTop"></div>
             <nav class="nav">
                 <div class="wrapper wrapper-nav">
                     <ul class="ul">
@@ -20,40 +21,42 @@
                 </div>
             </nav>
             <div class="banner-lead">
-                <img class="banner-image" src="./imgs/facci2.png" />
-                <!-- <div class="banner-content"> -->
-                    <button class="banner-button">contact me</button>
-                <!-- </div> -->
+                <img class="banner-image" src="./imgs/memedesima.jpg" />
+                <div class="banner-container">
+                    <article class="banner-content">
+                        <h1 class="banner-h1">Hi, I am Federica</h1>
+                        <p><strong> I am a Front-end Developer </strong> and a graduate of the Engineering Flex course at Thinkful. </p>
+                        <p>Proud Italian, previous lawyer and mediator, MBA. </p>        
+                        <p>I like learning new languages and putting my fantasies to work, 
+                            constantly searching for a balanced combination of colors and fluid structure of the webpage.</p>
+                        <p>Firm believer in the power of a constructive dialogue, I love learning from other people 
+                            and giving my contribution to the team. Shared ideas go a long way!</p>
+                    </article>  
+                </div>  
             </div>
         </header>
-        <section class="section life-intro">
-            <h1 class="h1">Hi, I am Federica</h1>
-            <div class="wrapper-life-intro">
-                <img src="./imgs/memedesima.jpg" />
-                <article class="life-intro-description">
-                    <p><strong> I am a Front-end Developer </strong> and future graduate of the Engineering Flex course at Thinkful. </p>
-                    <p>Proud Italian, previous lawyer and mediator, MBA graduate. </p>        
-                    <p>I like learning new languages and putting my fantasies to work, 
-                        constantly searching for a balanced combination of colors and fluid structure of the webpage.</p>
-                    <p>Firm believer in the power of a constructive dialogue, I love learning from other people 
-                        and giving my contribution to the team. Shared ideas go a long way!</p>
-                </article>
-            </div>
+        <section class="skills-bar">
+            <ul class="skills-ul">
+                <li class="skills-li">Learner on the go</li>
+                <li class="skills-li">True passion</li>
+                <li class="skills-li">Team player</li>
+                <li class="skills-li">Self boh!</li>
+            </ul>
         </section>
         <section class="section contacts">
             <div class="wrapper wrapper-contacts">
                 <ul class="ul-icon">
                     <li class="li-icon">
-                        <a href="#"><img class="icon" src="./imgs/github-black.png" /></a>
-                        <a href="#" class="link-icon">Visit my Github Profile</a>
+                        <a href="https://github.com/FedeColap" target="_blank" rel="noreferrer"><img class="icon" src="./imgs/github-black.png" /></a>
+                        <a href="https://github.com/FedeColap" target="_blank" rel="noreferrer" class="link-icon">Visit my Github Profile</a>
                     </li>
                     <li class="li-icon">
-                        <a href="#"><img class="icon" src="./imgs/linkedin-black.png" /></a>
-                        <a href="#" class="link-icon">Find me on LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/federica-colapaoli-9043897a" target="_blank" rel="noreferrer"><img class="icon" src="./imgs/linkedin-black.png" /></a>
+                        <a href="https://www.linkedin.com/in/federica-colapaoli-9043897a" target="_blank" rel="noreferrer" class="link-icon">Find me on LinkedIn</a>
                     </li>
                     <li class="li-icon">
-                        <a href="#"><img class="icon" src="./imgs/gmail-black.png" /></a>
-                        <a href="#" class="link-icon">Send me an email</a>
+                        <a href="mailto:colapaoli.federica@gmail.com" target="_blank" rel="noreferrer"><img class="icon" src="./imgs/gmail-black.png" /></a>
+                        <a href="mailto:colapaoli.federica@gmail.com" target="_blank" rel="noreferrer" class="link-icon">Send me an email</a>
                     </li>
                 </ul>
             </div>
@@ -69,17 +72,18 @@
                     <div class="project-console">
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
-                            <!-- Full-width images with number and caption text -->
-                            <div class="mySlides1 fade">
-                                <img src="imgs/projectPics/p3intro.png" alt="landing page from Bring It app" class="pictureProj1" >
+                            <div class="images-projs-container">
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides1 fade">
+                                    <img src="imgs/projectPics/p3intro.png" alt="landing page from Bring It app" class="pictureProj1" >
+                                </div>
+                                <div class="mySlides1 fade">
+                                    <img src="imgs/projectPics/p3list.png" alt="results page from Bring It app" class="pictureProj1">
+                                </div>
+                                <div class="mySlides1 fade">
+                                    <img src="imgs/projectPics/p3mission.png" alt="intro message from Bring It app" class="pictureProj1">
+                                </div>
                             </div>
-                            <div class="mySlides1 fade">
-                                <img src="imgs/projectPics/p3list.png" alt="results page from Bring It app" class="pictureProj1">
-                            </div>
-                            <div class="mySlides1 fade">
-                                <img src="imgs/projectPics/p3mission.png" alt="intro message from Bring It app" class="pictureProj1">
-                            </div>
-                        
                             <!-- Next and previous buttons -->
                             <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides1(1)">&#10095;</a>
@@ -112,6 +116,7 @@
                     <div class="project-console">
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
+                            <div class="images-projs-container">
                                 <!-- Full-width images with number and caption text -->
                                 <div class="mySlides2 fade">
                                     <img src="imgs/projectPics/p4login.png" alt="login page from Unleash login" class="pictureProj1" >
@@ -122,6 +127,7 @@
                                 <div class="mySlides2 fade">
                                     <img src="imgs/projectPics/p4welcome.png" alt="welcome page from Unleash" class="pictureProj1">
                                 </div>
+                            </div>
                                 <!-- Next and previous buttons -->
                                 <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
                                 <a class="next" onclick="plusSlides2(1)">&#10095;</a>
@@ -157,6 +163,7 @@
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
                             <!-- Full-width images with number and caption text -->
+                            <div class="images-projs-container">
                                 <div class="mySlides3 fade">
                                     <img src="imgs/projectPics/p2Intro.png" alt="landing page from my fairy tales' app"  class="pictureProj1">
                                 </div>
@@ -166,6 +173,7 @@
                                 <div class="mySlides3 fade">
                                     <img src="imgs/projectPics/p2info.png" alt="info about Pinocchio" class="pictureProj1">
                                 </div>
+                            </div>
                                 <!-- Next and previous buttons -->
                                 <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
                                 <a class="next" onclick="plusSlides3(1)">&#10095;</a>
@@ -197,16 +205,18 @@
                     <div class="project-console">
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
+                            <div class="images-projs-container">
                             <!-- Full-width images with number and caption text -->
-                            <div class="mySlides4 fade">
-                                <img src="imgs/projectPics/question-quiz.png" alt="a random question from my quiz app" class="pictureProj1" >
-                            </div>
-                            <div class="mySlides4 fade">
-                                <img src="imgs/projectPics/wrong-quiz.png" alt="wrong answer from my quiz app" class="pictureProj1">
-                            </div>
-                            <div class="mySlides4 fade">
-                                <img src="imgs/projectPics/ending-quiz.png" alt="ending page from my quiz app" class="pictureProj1">
+                                <div class="mySlides4 fade">
+                                    <img src="imgs/projectPics/question-quiz.png" alt="a random question from my quiz app" class="pictureProj1" >
                                 </div>
+                                <div class="mySlides4 fade">
+                                    <img src="imgs/projectPics/wrong-quiz.png" alt="wrong answer from my quiz app" class="pictureProj1">
+                                </div>
+                                <div class="mySlides4 fade">
+                                    <img src="imgs/projectPics/ending-quiz.png" alt="ending page from my quiz app" class="pictureProj1">
+                                </div>
+                            </div>
                             <!-- Next and previous buttons -->
                             <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides4(1)">&#10095;</a>
@@ -236,7 +246,7 @@
         </section>
         <footer>
             <p>2020 | Federica Colapaoli</p>
-            <p class="up">Go back to top</p>
+            <p><a href="#anchorTop" class="up">Go back to top</a></p>
         </footer>
         <script src="slideshow.js"></script>
     </body>

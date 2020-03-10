@@ -27,7 +27,8 @@
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border:2px solid #fde4f2;
+    border:2px solid #D6EFFF;
+    background-color: #f8f9fb;
   }
   .link-project {
     align-self: center;

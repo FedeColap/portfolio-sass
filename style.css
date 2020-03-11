@@ -9,7 +9,6 @@
   margin: 0 auto;
 }
 .banner-lead .banner-container {
-  background-color: deeppink;
   text-align: left;
   max-width: 90%;
   margin: auto;
@@ -18,7 +17,6 @@
   font-size: 32px;
 }
 .banner-lead .banner-container .banner-content {
-  background-color: pink;
   color: #FEFEFF;
 }
 .banner-lead .banner-container .banner-content p {
@@ -77,10 +75,8 @@ footer .up:hover {
   width: 60%;
   height: 100%;
   margin: 0;
-  background-color: red;
 }
 .nav .li-nav {
-  background-color: pink;
   list-style: none;
   display: inline-block;
   text-align: center;
@@ -204,7 +200,7 @@ footer .up:hover {
     text-align: right;
   }
   .banner-lead .banner-container .banner-h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .banner-lead .banner-container .banner-content {
     margin-right: 50px;
@@ -218,6 +214,19 @@ footer .up:hover {
 @media screen and (min-width: 700px) {
   .mobilePics {
     display: none;
+  }
+
+  .nav ul {
+    width: 400px;
+  }
+  .nav .li-nav {
+    width: 50%;
+    display: block;
+    padding: 16px;
+  }
+  .nav .link-nav {
+    display: block;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -263,19 +272,6 @@ footer .up:hover {
 
   .images-projs-container {
     display: block;
-  }
-
-  .nav ul {
-    width: 400px;
-  }
-  .nav .li-nav {
-    width: 50%;
-    display: block;
-    padding: 16px;
-  }
-  .nav .link-nav {
-    display: block;
-    width: 100%;
   }
 
   .section-bg {

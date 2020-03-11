@@ -55,7 +55,7 @@ $sectionWidth: 940px;
         margin:0 auto;
     }
     .banner-container{
-        background-color: deeppink;
+        // background-color: deeppink;
         text-align: left;
         max-width: 90%;
         margin: auto;
@@ -63,7 +63,7 @@ $sectionWidth: 940px;
             font-size: 32px;
         }
         .banner-content {
-            background-color:pink;
+            // background-color:pink;
             color: $offwhite;  
             p {
                 display: block;
@@ -120,10 +120,10 @@ footer {
         width: 60%;
         height: 100%;
         margin:0;
-        background-color: red;
+        // background-color: red;
     }
     .li-nav {
-        background-color: pink;
+        // background-color: pink;
         list-style: none;
         display: inline-block;
         text-align: center;
@@ -229,194 +229,102 @@ footer {
             align-self: center;
         } 
         .banner-container{
-            // background-color: deeppink;
             text-align: right;
             .banner-h1 {
-                font-size: 30px;
+                font-size: 40px;
             }
             .banner-content {
-                // color: $offwhite;
                 margin-right: 50px;
                 max-width: 900px;
                 p {
-                    // display: block;
                     font-size: 20px;
-                    // color: pink;
                     line-height:40px;
                 }
             }
         }       
     }
-    
 }
-//for tablets slideshow fix
+//for tablets slideshow and nav fix
 @media screen and (min-width: 700px) {
     .mobilePics {
         display: none;
-    }   
+    } 
+    .nav {
+        ul {
+            width: 400px;
+        }
+        .li-nav {
+            width: 50%;
+            display: block;
+            padding:16px;
+        }
+        .link-nav {
+            display: block;
+            width: 100%;
+        }
+    }  
 }
 //big tablets and computer
 @media screen and (min-width: 1600px) {
 
     .banner-lead {
-        // width: 100%;
         max-height: 500px;
-        // background-color: black;
         flex-direction: row;
         justify-content: space-between;
         .banner-image {
             max-width: 500px;
             max-height: 500px;
-            // text-align: center;
             margin:0;
         }
         .banner-container{
-            // background-color: deeppink;
             text-align: right;
             .banner-h1 {
                 @include h1style;
             }
             .banner-content {
-                // color: $offwhite;
                 margin-right: 50px;
                 max-width: 900px;
                 p {
-                    // display: block;
                     font-size: 25px;
-                    // color: pink;
                     line-height:40px;
                 }
             }
         }
     }
     .banner-second {
-        // display: flex;
-        // justify-content: center;
-        // background-image: $h2style;
-        // color: black;
-        // height: 300px;
         .h2 {
             @include h2style;
         }
     }
     footer {
-        // background-color: $deepblue;
-        // display: flex;
-        // justify-content: space-between;
-        // color: $babypink;
         p{
             margin-left: 80px;
         }
         .up {
-            // display: block;
             margin-right:80px;
-            // color: $babypink;
-            // cursor: pointer;
-            // &:hover {
-            //     background-color: $babypink;
-            //     color: $deepblue;
-            // }
         }
     }
-    // .mobilePics {
-    //     display: none;
-    // }
     .images-projs-container {
         display: block;
     }
-    .nav {
-        // background: $yellowdarker;
-        // position:fixed;
-        // width: 100%;
-        // z-index: 2;
-        ul {
-            width: 400px;
-            // margin:0;
-        }
-        .li-nav {
-            // float: right;
-            width: 50%;
-            // list-style: none;
-            display: block;
-            // height: 40px;
-            // text-align: center;
-            padding:16px;
-            // &:hover {
-            //     background-color: $yellowmedium;
-            // }
-        }
-        .link-nav {
-            display: block;
-            width: 100%;
-            // color: $deepblue;
-            // text-decoration: none;
-            // &:hover {
-            //     color:$deepblue;
-            // }
-        }
-    }
-    // .nav-protector {
-    //     display:block;
-    //     width: 100%;
-    //     height: 57px;
-    // }
     .section-bg {
         @include projectSection;
     }
     .section-project:nth-child(even) {
-        // background-color: #eeeeee;
         .fakeButton {
             border:2px solid $babyblue;
             background-color: $offwhite;
         }
     }
-    // .skills-bar {
-    //     // background-color: $yellowdarker;
-    //     // .skills-ul {
-    //     //     margin: 0;
-    //     //     padding:0;
-    //     //     display: flex;
-    //     //     flex-direction: row;
-    //     //     justify-content: space-evenly;
-    //     // }
-    //     .skills-li {
-    //         display: inline-block;
-    //         padding: 16px;
-    //         background-color: $yellowmedium;
-    //         border-radius: 5px;
-    //         margin:16px;
-    //         box-shadow: 0 10px 6px -6px #777;
-    //         -webkit-box-shadow: 0 10px 6px -6px #777;
-    //         -moz-box-shadow: 0 10px 6px -6px #777;
-    //     }
-    // }
-    // .spacer {
-    //     display: block;
-    //     height: $spacer;
-    // }
     .wrapper-contacts {
-        // width: 100%;
-        // margin: $spacer 0;
         .ul-icon {
             width: 60%;
-            // margin: auto;
-            // padding: 0;
-            // display: flex;
-            // flex-direction: row;
             justify-content: space-evenly;
         }
-        // .li-icon {
-        //     width:$iconwidth;
-        //     margin: 0;
-        //     box-sizing: border-box;
-        //     text-align:center;
-        //     list-style: none;  
-        // }
         .icon {
             width: $iconwidth;
             padding: 70px;
             border: 2px solid $babypink;
-            // border-radius:50%;
         }
         .link-icon {
             color: $deepblue;

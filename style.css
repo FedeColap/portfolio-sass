@@ -123,10 +123,6 @@ footer .up:hover {
 .section-project:nth-child(even) {
   background-color: #eeeeee;
 }
-.section-project:nth-child(even) .fakeButton {
-  border: 2px solid #D6EFFF;
-  background-color: #FEFEFF;
-}
 
 .skills-bar {
   background-color: #fbc02d;

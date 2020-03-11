@@ -6,14 +6,15 @@ $yellowmedium: #fdd835;
 $yellowdarker: #fbc02d;
 $brilliantgreen: #30cb00;
 $h2style: linear-gradient(to bottom right, #11998e,#38ef7d);
-$h1font:50px;
+$h1font: 50px;
 $h2font: 40px;
 $h3font: 35px;
 $iconwidth: 200px;
 $myphoto:300px;
+$myphotoMobile: 260px;
 $pictureSlideshow: 500px;
 $spacer:100px;
-$sectionWidth: 950px;
+$sectionWidth: 940px;
 
 @mixin h1style {
     font-size: $h1font;
@@ -42,37 +43,34 @@ $sectionWidth: 950px;
         @include h3style;
     }
 }
-.nav-protector {
-    display:block;
-    width: 100%;
-    height: 57px;
-}
+
+
 .banner-lead {
     width: 100%;
-    max-height: 500px;
+    // max-height: ($myphotoMobile + 58px);
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
     .banner-image {
-        max-width: 500px;
-        text-align: center;
-        margin:0;
+        max-width: 90%;
+        margin:0 auto;
     }
     .banner-container{
-        // background-color: deeppink;
-        text-align: right;
+        background-color: deeppink;
+        text-align: left;
+        max-width: 90%;
+        margin: auto;
         .banner-h1 {
-            @include h1style;
+            font-size: 32px;
         }
         .banner-content {
-            color: $offwhite;
-            margin-right: 50px;
-            max-width: 900px;
+            background-color:pink;
+            color: $offwhite;  
             p {
                 display: block;
-                font-size: 25px;
-                // color: pink;
-                line-height:40px;
+                font-size: 16px;
+                line-height:30px;
             }
         }
     }
@@ -84,7 +82,11 @@ $sectionWidth: 950px;
     color: black;
     height: 300px;
     .h2 {
-        @include h2style;
+        font-size: 32px;
+        align-self: center;
+        font-weight: 800;
+        line-height: 1.1;
+        font-family: 'Montserrat Black', sans-serif;
     }
 }
 footer {
@@ -109,26 +111,31 @@ footer {
 .nav {
     background: $yellowdarker;
     position:fixed;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
+    height: 57px;
     z-index: 2;
     ul {
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        height: 100%;
         margin:0;
+        background-color: red;
     }
     .li-nav {
-        float: right;
-        width: 14%;
+        background-color: pink;
         list-style: none;
-        display: block;
-        // height: 40px;
+        display: inline-block;
         text-align: center;
-        padding:16px;
+        padding: 10px;
         &:hover {
             background-color: $yellowmedium;
         }
     }
     .link-nav {
-        display: block;
+        display: inline-block;
         width: 100%;
         color: $deepblue;
         text-decoration: none;
@@ -136,6 +143,11 @@ footer {
             color:$deepblue;
         }
     }
+}
+.nav-protector {
+    display:block;
+    width: 100%;
+    height: 57px;
 }
 .section-bg {
     @include projectSection;
@@ -149,10 +161,13 @@ footer {
 }
 .skills-bar {
     background-color: $yellowdarker;
+    display:flex;
     .skills-ul {
         margin: 0;
+        padding:0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
     .skills-li {
@@ -174,32 +189,199 @@ footer {
     width: 100%;
     margin: $spacer 0;
     .ul-icon {
-        width: 60%;
+        width: 90%;
         margin: auto;
         padding: 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .li-icon {
-        width:200px;
+        width:$iconwidth;
         margin: 0;
         box-sizing: border-box;
         text-align:center;
         list-style: none;  
     }
     .icon {
-        width: $iconwidth;
-        padding: 70px;
-        border: 2px solid $babypink;
+        width: 50px;
         border-radius:50%;
     }
     .link-icon {
-        color: $deepblue;
-        text-decoration: none;
-        &:hover {
-            color: complement($deepblue);
-        }
+        display: none;
     }
     
+}
+
+
+@media screen and (min-width: 1600px) {
+
+    .banner-lead {
+        width: 100%;
+        max-height: 500px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        .banner-image {
+            max-width: 500px;
+            text-align: center;
+            margin:0;
+        }
+        .banner-container{
+            // background-color: deeppink;
+            text-align: right;
+            .banner-h1 {
+                @include h1style;
+            }
+            .banner-content {
+                color: $offwhite;
+                margin-right: 50px;
+                max-width: 900px;
+                p {
+                    display: block;
+                    font-size: 25px;
+                    // color: pink;
+                    line-height:40px;
+                }
+            }
+        }
+    }
+    .banner-second {
+        display: flex;
+        justify-content: center;
+        background-image: $h2style;
+        color: black;
+        height: 300px;
+        .h2 {
+            @include h2style;
+        }
+    }
+    footer {
+        background-color: $deepblue;
+        display: flex;
+        justify-content: space-between;
+        color: $babypink;
+        p{
+            margin-left: 80px;
+        }
+        .up {
+            display: block;
+            margin-right:80px;
+            color: $babypink;
+            cursor: pointer;
+            &:hover {
+                background-color: $babypink;
+                color: $deepblue;
+            }
+        }
+    }
+    .mobilePics {
+        display: none;
+    }
+    .images-projs-container {
+        display: block;
+    }
+    .nav {
+        background: $yellowdarker;
+        position:fixed;
+        width: 100%;
+        z-index: 2;
+        ul {
+            width: 100%;
+            margin:0;
+        }
+        .li-nav {
+            float: right;
+            width: 14%;
+            list-style: none;
+            display: block;
+            // height: 40px;
+            text-align: center;
+            padding:16px;
+            &:hover {
+                background-color: $yellowmedium;
+            }
+        }
+        .link-nav {
+            display: block;
+            width: 100%;
+            color: $deepblue;
+            text-decoration: none;
+            &:hover {
+                color:$deepblue;
+            }
+        }
+    }
+    .nav-protector {
+        display:block;
+        width: 100%;
+        height: 57px;
+    }
+    .section-bg {
+        @include projectSection;
+    }
+    .section-project:nth-child(even) {
+        background-color: #eeeeee;
+        .fakeButton {
+            border:2px solid $babyblue;
+            background-color: $offwhite;
+        }
+    }
+    .skills-bar {
+        background-color: $yellowdarker;
+        .skills-ul {
+            margin: 0;
+            padding:0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .skills-li {
+            display: inline-block;
+            padding: 16px;
+            background-color: $yellowmedium;
+            border-radius: 5px;
+            margin:16px;
+            box-shadow: 0 10px 6px -6px #777;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+        }
+    }
+    .spacer {
+        display: block;
+        height: $spacer;
+    }
+    .wrapper-contacts {
+        width: 100%;
+        margin: $spacer 0;
+        .ul-icon {
+            width: 60%;
+            margin: auto;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .li-icon {
+            width:$iconwidth;
+            margin: 0;
+            box-sizing: border-box;
+            text-align:center;
+            list-style: none;  
+        }
+        .icon {
+            width: $iconwidth;
+            padding: 70px;
+            border: 2px solid $babypink;
+            border-radius:50%;
+        }
+        .link-icon {
+            color: $deepblue;
+            text-decoration: none;
+            &:hover {
+                color: complement($deepblue);
+            }
+        }
+        
+    }
 }

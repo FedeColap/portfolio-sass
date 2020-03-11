@@ -49,11 +49,11 @@ footer {
   color: #fde4f2;
 }
 footer p {
-  margin-left: 80px;
+  margin-left: 20px;
 }
 footer .up {
   display: block;
-  margin-right: 80px;
+  margin-right: 20px;
   color: #fde4f2;
   cursor: pointer;
 }
@@ -129,6 +129,7 @@ footer .up:hover {
   display: flex;
 }
 .skills-bar .skills-ul {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -179,17 +180,55 @@ footer .up:hover {
   display: none;
 }
 
+@media screen and (min-width: 400px) {
+  .banner-lead {
+    flex-direction: column;
+  }
+  .banner-lead .banner-image {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .banner-lead {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .banner-lead .banner-image {
+    max-width: 345px;
+    max-height: 345px;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .banner-lead .banner-container {
+    text-align: right;
+  }
+  .banner-lead .banner-container .banner-h1 {
+    font-size: 30px;
+  }
+  .banner-lead .banner-container .banner-content {
+    margin-right: 50px;
+    max-width: 900px;
+  }
+  .banner-lead .banner-container .banner-content p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .mobilePics {
+    display: none;
+  }
+}
 @media screen and (min-width: 1600px) {
   .banner-lead {
-    width: 100%;
     max-height: 500px;
-    background-color: black;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .banner-lead .banner-image {
     max-width: 500px;
-    text-align: center;
+    max-height: 500px;
     margin: 0;
   }
   .banner-lead .banner-container {
@@ -199,23 +238,14 @@ footer .up:hover {
     font-size: 50px;
   }
   .banner-lead .banner-container .banner-content {
-    color: #FEFEFF;
     margin-right: 50px;
     max-width: 900px;
   }
   .banner-lead .banner-container .banner-content p {
-    display: block;
     font-size: 25px;
     line-height: 40px;
   }
 
-  .banner-second {
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, #11998e, #38ef7d);
-    color: black;
-    height: 300px;
-  }
   .banner-second .h2 {
     align-self: center;
     font-size: 40px;
@@ -224,69 +254,28 @@ footer .up:hover {
     font-family: "Montserrat Black", sans-serif;
   }
 
-  footer {
-    background-color: #032f3e;
-    display: flex;
-    justify-content: space-between;
-    color: #fde4f2;
-  }
   footer p {
     margin-left: 80px;
   }
   footer .up {
-    display: block;
     margin-right: 80px;
-    color: #fde4f2;
-    cursor: pointer;
-  }
-  footer .up:hover {
-    background-color: #fde4f2;
-    color: #032f3e;
-  }
-
-  .mobilePics {
-    display: none;
   }
 
   .images-projs-container {
     display: block;
   }
 
-  .nav {
-    background: #fbc02d;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-  }
   .nav ul {
-    width: 100%;
-    margin: 0;
+    width: 400px;
   }
   .nav .li-nav {
-    float: right;
-    width: 14%;
-    list-style: none;
+    width: 50%;
     display: block;
-    text-align: center;
     padding: 16px;
-  }
-  .nav .li-nav:hover {
-    background-color: #fdd835;
   }
   .nav .link-nav {
     display: block;
     width: 100%;
-    color: #032f3e;
-    text-decoration: none;
-  }
-  .nav .link-nav:hover {
-    color: #032f3e;
-  }
-
-  .nav-protector {
-    display: block;
-    width: 100%;
-    height: 57px;
   }
 
   .section-bg {
@@ -304,64 +293,19 @@ footer .up:hover {
     padding: 100px 0 70px 0;
   }
 
-  .section-project:nth-child(even) {
-    background-color: #eeeeee;
-  }
   .section-project:nth-child(even) .fakeButton {
     border: 2px solid #D6EFFF;
     background-color: #FEFEFF;
   }
 
-  .skills-bar {
-    background-color: #fbc02d;
-  }
-  .skills-bar .skills-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .skills-bar .skills-li {
-    display: inline-block;
-    padding: 16px;
-    background-color: #fdd835;
-    border-radius: 5px;
-    margin: 16px;
-    box-shadow: 0 10px 6px -6px #777;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-  }
-
-  .spacer {
-    display: block;
-    height: 100px;
-  }
-
-  .wrapper-contacts {
-    width: 100%;
-    margin: 100px 0;
-  }
   .wrapper-contacts .ul-icon {
     width: 60%;
-    margin: auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-  }
-  .wrapper-contacts .li-icon {
-    width: 200px;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
-    list-style: none;
   }
   .wrapper-contacts .icon {
     width: 200px;
     padding: 70px;
     border: 2px solid #fde4f2;
-    border-radius: 50%;
   }
   .wrapper-contacts .link-icon {
     color: #032f3e;

@@ -14,7 +14,7 @@ $myphoto:300px;
 $myphotoMobile: 260px;
 $pictureSlideshow: 500px;
 $spacer:100px;
-$sectionWidth: 940px;
+$sectionWidth: 850px;
 
 @mixin h1style {
     font-size: $h1font;
@@ -214,10 +214,10 @@ footer {
         .banner-image {
             max-width: 345px;
             margin:0 auto;
-        }        
+        }   
     }
 }
-//for little tablets banner-content fix
+//for little tablets banner-content and contact-icons fix
 @media screen and (min-width: 900px) {
     .banner-lead {
         flex-direction: row;
@@ -242,6 +242,27 @@ footer {
                 }
             }
         }       
+    }
+    .wrapper-contacts {
+        .ul-icon {
+            width: 60%;
+            max-width: 850px;
+            justify-content: space-between;
+        }
+        .icon {
+            width: 150px;
+            padding: 45px;
+            border: 2px solid $babypink;
+        }
+        .link-icon {
+            display:inline-block;
+            color: $deepblue;
+            text-decoration: none;
+            &:hover {
+                color: complement($deepblue);
+            }
+        }
+        
     }
 }
 //for tablets slideshow and nav fix
@@ -285,7 +306,7 @@ footer {
                 margin-right: 50px;
                 max-width: 900px;
                 p {
-                    font-size: 25px;
+                    font-size: 22px;
                     line-height:40px;
                 }
             }
@@ -317,22 +338,9 @@ footer {
         }
     }
     .wrapper-contacts {
-        .ul-icon {
-            width: 60%;
-            justify-content: space-evenly;
-        }
         .icon {
             width: $iconwidth;
             padding: 70px;
-            border: 2px solid $babypink;
-        }
-        .link-icon {
-            color: $deepblue;
-            text-decoration: none;
-            &:hover {
-                color: complement($deepblue);
-            }
-        }
-        
+        } 
     }
 }

@@ -103,7 +103,7 @@ footer .up:hover {
 
 .section-bg {
   display: block;
-  max-width: 940px;
+  max-width: 850px;
   margin: auto;
   padding-bottom: 100px;
 }
@@ -210,6 +210,25 @@ footer .up:hover {
     font-size: 20px;
     line-height: 40px;
   }
+
+  .wrapper-contacts .ul-icon {
+    width: 60%;
+    max-width: 850px;
+    justify-content: space-between;
+  }
+  .wrapper-contacts .icon {
+    width: 150px;
+    padding: 45px;
+    border: 2px solid #fde4f2;
+  }
+  .wrapper-contacts .link-icon {
+    display: inline-block;
+    color: #032f3e;
+    text-decoration: none;
+  }
+  .wrapper-contacts .link-icon:hover {
+    color: #3e1203;
+  }
 }
 @media screen and (min-width: 700px) {
   .mobilePics {
@@ -251,7 +270,7 @@ footer .up:hover {
     max-width: 900px;
   }
   .banner-lead .banner-container .banner-content p {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 40px;
   }
 
@@ -276,7 +295,7 @@ footer .up:hover {
 
   .section-bg {
     display: block;
-    max-width: 940px;
+    max-width: 850px;
     margin: auto;
     padding-bottom: 100px;
   }
@@ -294,21 +313,9 @@ footer .up:hover {
     background-color: #FEFEFF;
   }
 
-  .wrapper-contacts .ul-icon {
-    width: 60%;
-    justify-content: space-evenly;
-  }
   .wrapper-contacts .icon {
     width: 200px;
     padding: 70px;
-    border: 2px solid #fde4f2;
-  }
-  .wrapper-contacts .link-icon {
-    color: #032f3e;
-    text-decoration: none;
-  }
-  .wrapper-contacts .link-icon:hover {
-    color: #3e1203;
   }
 }
 
